@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './root.css';
 import Home from './home/Home';
 import reportWebVitals from './reportWebVitals';
+import Navbar from './navbar/Navbar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Navbar activeIndex='1' />
     <Home />
   </React.StrictMode>
 );
