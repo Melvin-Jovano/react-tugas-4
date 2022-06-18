@@ -3,13 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './root.css';
 import Home from './home/Home';
 import reportWebVitals from './reportWebVitals';
-import Navbar from './navbar/Navbar';
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Navbar activeIndex='1' />
-    <Home />
+
+    <Router>
+
+      <Routes>
+        <Route path="/" element={<Home/>} />
+      </Routes>
+
+    </Router>
+    
   </React.StrictMode>
 );
 

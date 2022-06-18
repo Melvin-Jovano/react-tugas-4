@@ -1,6 +1,7 @@
 import './navbar.css';
 import {FaSearch, FaChromecast} from 'react-icons/fa';
 import {Component} from 'react';
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
     constructor(props) {
@@ -19,6 +20,20 @@ class Navbar extends Component {
         });
     }
 
+    setNavColor(navLinkIndex) {
+        if(this.state.activeIndex === navLinkIndex)
+            return 'white'
+        else
+            return 'grey'
+    }
+
+    setNavClass(navLinkIndex) {
+        if(this.state.activeIndex === navLinkIndex)
+            return 'text-white cursor-pointer fw-bold mx-4 link-navbar'
+        else
+            return 'cursor-pointer fw-bold mx-4 link-navbar'
+    }
+
     render() {
         return (
             <div className='bg-black py-3 px-3'>
@@ -28,20 +43,33 @@ class Navbar extends Component {
                         <img className="logo style-scope ytmusic-nav-bar" alt="" src="//music.youtube.com/img/on_platform_logo_dark.svg" />
                     </div>
 
-                    <div className='text-muted fs-5'>
+                    <div className='fs-5'>
                         <center>
-                            <span data-id='1' className={this.state.activeIndex === '1' ? 'text-white cursor-pointer fw-bold mx-4' : 'cursor-pointer fw-bold mx-4'} onClick={this.setActiveIndex}>
-                                Home
-                            </span>
-                            <span data-id='2' className={this.state.activeIndex === '2' ? 'text-white cursor-pointer fw-bold mx-4' : 'cursor-pointer fw-bold mx-4'} onClick={this.setActiveIndex}>
-                                Explore
-                            </span>
-                            <span data-id='3' className={this.state.activeIndex === '3' ? 'text-white cursor-pointer fw-bold mx-4' : 'cursor-pointer fw-bold mx-4'} onClick={this.setActiveIndex}>
-                                Library
-                            </span>
-                            <span data-id='4' className={this.state.activeIndex === '4' ? 'text-white cursor-pointer fw-bold mx-4' : 'cursor-pointer fw-bold mx-4'} onClick={this.setActiveIndex}>
-                                <FaSearch />&emsp;Search
-                            </span>
+                            <Link to='/' style={{ textDecoration: 'none', color: this.setNavColor('1')}} className={this.setNavClass('1')}>
+                                <span data-id='1' onClick={this.setActiveIndex}>
+                                    Home
+                                </span>
+                            </Link>
+                            
+                            <Link to='/' style={{ textDecoration: 'none', color: this.setNavColor('2')}} className={this.setNavClass('2')}>
+                                <span data-id='2' onClick={this.setActiveIndex}>
+                                    Explore
+                                </span>
+                            </Link>
+                            
+                            <Link to='/' style={{ textDecoration: 'none', color: this.setNavColor('3')}} className={this.setNavClass('3')}>
+                                <span data-id='3' onClick={this.setActiveIndex}>
+                                    Library
+                                </span>
+                            </Link>
+
+                            <Link to='/' style={{ textDecoration: 'none', color: this.setNavColor('4')}} className={this.setNavClass('4')}>
+                                <span data-id='4' onClick={this.setActiveIndex}>
+                                    <FaSearch />&emsp;Search
+                                </span>
+                            </Link>
+                            
+                            
                         </center>
                     </div>
 

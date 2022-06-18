@@ -5,3 +5,7 @@
 .cursor-pointer {
     cursor: pointer;
 }
+
+.link-navbar:hover {
+    color: white;
+}
