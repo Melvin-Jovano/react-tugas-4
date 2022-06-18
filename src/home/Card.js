@@ -2,19 +2,20 @@ import {Component, Fragment} from 'react';
 import './home.css';
 import { cardData } from './card_data';
 import { your_favorite } from './your_favorite_data';
+import {mixedForYou} from './mixed_for_you';
 import CardItem from './CardItem';
 
 export default class Card extends Component {
 
     constructor(props) {
         super(props);   
-        // 1 : Listen Again, 2 : Your Favourites
-        
         this.cardDatas = props.type === 1 
             ? cardData 
             : props.type === 2 
                 ? your_favorite 
-                : your_favorite;
+                : props.type === 3
+                    ? mixedForYou 
+                    : mixedForYou;
     }
 
     render() {

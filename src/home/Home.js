@@ -79,6 +79,39 @@ export default class Home extends Component {
             </div>
             {/* Your favourites Section */}
 
+            {/* Mixed For You Section */}
+            <div>
+              <div className="d-flex justify-content-between mb-2">
+                <div className='fs-2 fw-bolder text-white'>
+                  Mixed for you
+                </div>
+
+                <div className='fs-2 fw-bolder'>
+                  <span href="#mixedForYouCarousel" role="button" data-bs-slide="prev">
+                    <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1 rotate90deg'/>
+                  </span>
+                  &emsp;
+                  <span href="#mixedForYouCarousel" role="button" data-bs-slide="next">
+                    <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1'/>
+                  </span>
+                  &emsp;
+                </div>
+              </div>
+            
+              <div>
+                <div className="text-center my-3">
+                  <div className="row my-auto justify-content-center">
+                      <div id="mixedForYouCarousel" className="carousel slide" data-bs-ride="carousel">
+                          <div className="carousel-inner mb-3" role="listbox">
+                              <Card type={3} />
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Mixed For You Section */}
+
           </div>
         
         </div>
