@@ -29,9 +29,9 @@ class Navbar extends Component {
 
     setNavClass(navLinkIndex) {
         if(this.state.activeIndex === navLinkIndex)
-            return 'text-white cursor-pointer fw-bold mx-4 link-navbar'
+            return 'text-white cursor-pointer fw-bold mx-4'
         else
-            return 'cursor-pointer fw-bold mx-4 link-navbar'
+            return 'cursor-pointer fw-bold mx-4'
     }
 
     render() {
@@ -46,25 +46,25 @@ class Navbar extends Component {
                     <div className='fs-5'>
                         <center>
                             <Link to='/' style={{ textDecoration: 'none', color: this.setNavColor('1')}} className={this.setNavClass('1')}>
-                                <span data-id='1' onClick={this.setActiveIndex}>
+                                <span data-id='1' onClick={this.setActiveIndex} className='link-navbar'>
                                     Home
                                 </span>
                             </Link>
                             
                             <Link to='/' style={{ textDecoration: 'none', color: this.setNavColor('2')}} className={this.setNavClass('2')}>
-                                <span data-id='2' onClick={this.setActiveIndex}>
+                                <span data-id='2' onClick={this.setActiveIndex} className='link-navbar'>
                                     Explore
                                 </span>
                             </Link>
                             
                             <Link to='/' style={{ textDecoration: 'none', color: this.setNavColor('3')}} className={this.setNavClass('3')}>
-                                <span data-id='3' onClick={this.setActiveIndex}>
+                                <span data-id='3' onClick={this.setActiveIndex} className='link-navbar'>
                                     Library
                                 </span>
                             </Link>
 
                             <Link to='/' style={{ textDecoration: 'none', color: this.setNavColor('4')}} className={this.setNavClass('4')}>
-                                <span data-id='4' onClick={this.setActiveIndex}>
+                                <span data-id='4' onClick={this.setActiveIndex} className='link-navbar'>
                                     <FaSearch />&emsp;Search
                                 </span>
                             </Link>
