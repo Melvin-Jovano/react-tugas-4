@@ -5,3 +5,11 @@
 .rotate90deg {
     transform: rotate(180deg);
 }
+
+.height-for-card-carousel {
+    height: 300px;
+}
+
+.underline-on-hover:hover {
+    text-decoration: underline;
+}
