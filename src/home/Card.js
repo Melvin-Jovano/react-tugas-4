@@ -4,6 +4,9 @@ import { cardData } from './card_data';
 import { your_favorite } from './your_favorite_data';
 import {mixedForYou} from './mixed_for_you';
 import CardItem from './CardItem';
+import { mixed } from './mixed';
+import {startRadioBasedOnASong} from './start_radio_based_on_a_song';
+import CardMultiItem from './CardMultiItem';
 
 export default class Card extends Component {
 
@@ -15,15 +18,22 @@ export default class Card extends Component {
                 ? your_favorite 
                 : props.type === 3
                     ? mixedForYou 
-                    : mixedForYou;
+                    : props.type === 4
+                        ? mixed
+                        : props.type === 5
+                            ? startRadioBasedOnASong
+                            : startRadioBasedOnASong;
     }
 
     render() {
         const cards = this.cardDatas.map((cardData, index) => {
+            let cardItem = <CardItem data={cardData} />;
+
+            if(this.props.type === 5) cardItem = <CardMultiItem data={cardData} />;
             return(
                 <Fragment key={index}>
                     <div className={(index === 0) ? "carousel-item active height-for-card-carousel" : "carousel-item height-for-card-carousel"} >
-                        <CardItem data={cardData}/>
+                        {cardItem}
                     </div>
                 </Fragment>
             );

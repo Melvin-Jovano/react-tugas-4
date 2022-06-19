@@ -24,11 +24,10 @@ export default class Home extends Component {
                   <span href="#yourFavouritesCarousel" role="button" data-bs-slide="prev">
                     <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1 rotate90deg'/>
                   </span>
-                  &emsp;
+                  &nbsp;&nbsp;
                   <span href="#yourFavouritesCarousel" role="button" data-bs-slide="next">
                     <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1'/>
                   </span>
-                  &emsp;
                 </div>
               </div>
             
@@ -57,11 +56,10 @@ export default class Home extends Component {
                   <span href="#listenAgainCarousel" role="button" data-bs-slide="prev">
                     <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1 rotate90deg'/>
                   </span>
-                  &emsp;
+                  &nbsp;&nbsp;
                   <span href="#listenAgainCarousel" role="button" data-bs-slide="next">
                     <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1'/>
                   </span>
-                  &emsp;
                 </div>
               </div>
             
@@ -90,11 +88,10 @@ export default class Home extends Component {
                   <span href="#mixedForYouCarousel" role="button" data-bs-slide="prev">
                     <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1 rotate90deg'/>
                   </span>
-                  &emsp;
+                  &nbsp;&nbsp;
                   <span href="#mixedForYouCarousel" role="button" data-bs-slide="next">
                     <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1'/>
                   </span>
-                  &emsp;
                 </div>
               </div>
             
@@ -111,6 +108,71 @@ export default class Home extends Component {
               </div>
             </div>
             {/* Mixed For You Section */}
+
+            {/* Charts Section */}
+            <div>
+              <div className="d-flex justify-content-between mb-2">
+                <div className='fs-2 fw-bolder text-white'>
+                  Charts
+                </div>
+
+                <div className='text-sm text-start'>
+                  <div className='text-muted cursor-pointer'>MORE</div>
+                </div>
+              </div>
+            
+              <div>
+                <div className="text-center my-3">
+                  <div className="row my-auto justify-content-center">
+                      <div id="mixedCarousel" className="carousel slide" data-bs-ride="carousel">
+                          <div className="carousel-inner mb-3" role="listbox">
+                              <Card type={4} />
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Charts Section */}
+
+            {/* Start Radio Based On A Song Section */}
+            <div>
+              <div className="d-flex justify-content-between mb-2">
+                
+                <div>
+                  <div className='text-muted'>
+                    START RADIO BASED ON A SONG
+                  </div>
+                  <div className='fs-2 fw-bolder text-white'>
+                    Quick picks
+                  </div>
+                </div>
+                
+
+                <div className='fs-2 fw-bolder'>
+                  <span href="#startRadioBasedOnASongCarousel" role="button" data-bs-slide="prev">
+                    <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1 rotate90deg'/>
+                  </span>
+                  &nbsp;&nbsp;
+                  <span href="#startRadioBasedOnASongCarousel" role="button" data-bs-slide="next">
+                    <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1'/>
+                  </span>
+                </div>
+              </div>
+            
+              <div>
+                <div className="text-center my-3">
+                  <div className="row my-auto justify-content-center">
+                      <div id="startRadioBasedOnASongCarousel" className="carousel slide" data-bs-ride="carousel">
+                          <div className="carousel-inner mb-3" role="listbox">
+                              <Card type={5} />
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Start Radio Based On A Song Section */}
 
           </div>
         
