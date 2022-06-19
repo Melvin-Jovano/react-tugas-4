@@ -70,7 +70,7 @@ export const mixedForYou = [
         },
         {
             thumbnail : 'https://www.gstatic.com/youtube/media/ytm/images/pbg/liked-songs-@576.png',
-            title : 'People Also likes',
+            title : 'People Also Likes',
             description : 'Auto playlist',
             span : 2
         }
