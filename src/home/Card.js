@@ -7,6 +7,8 @@ import CardItem from './CardItem';
 import { mixed } from './mixed';
 import {startRadioBasedOnASong} from './start_radio_based_on_a_song';
 import CardMultiItem from './CardMultiItem';
+import {recommendedForYou} from './recommended_for_you';
+import { similarTo } from './similar_to';
 
 export default class Card extends Component {
 
@@ -22,7 +24,11 @@ export default class Card extends Component {
                         ? mixed
                         : props.type === 5
                             ? startRadioBasedOnASong
-                            : startRadioBasedOnASong;
+                            : props.type === 6
+                                ? recommendedForYou
+                                : props.type === 7
+                                    ? similarTo
+                                    : similarTo;
     }
 
     render() {

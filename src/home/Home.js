@@ -174,6 +174,87 @@ export default class Home extends Component {
             </div>
             {/* Start Radio Based On A Song Section */}
 
+            {/* Recommended For You Section */}
+            <div>
+              <div className="d-flex justify-content-between mb-2">
+                
+                <div className='fs-2 fw-bolder text-white'>
+                  Recommended music videos
+                </div>
+                
+                <div className='fs-2 fw-bolder'>
+                  <span href="#recommendedForYouCarousel" role="button" data-bs-slide="prev">
+                    <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1 rotate90deg'/>
+                  </span>
+                  &nbsp;&nbsp;
+                  <span href="#recommendedForYouCarousel" role="button" data-bs-slide="next">
+                    <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1'/>
+                  </span>
+                </div>
+              </div>
+            
+              <div>
+                <div className="text-center my-3">
+                  <div className="row my-auto justify-content-center">
+                      <div id="recommendedForYouCarousel" className="carousel slide" data-bs-ride="carousel">
+                          <div className="carousel-inner mb-3" role="listbox">
+                              <Card type={6} />
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Recommended For You Section */}
+
+            {/* Similar To Section */}
+            <div>
+              <div className="d-flex justify-content-between mb-2">
+                
+                <div>
+                  <table cellPadding={10}>
+                    <tr>
+                      <td rowSpan={2}>
+                        <img className='rounded-circle' src='https://lh3.googleusercontent.com/1R7O2eSFP8Xv2bVPmyc8dB_HnLK723RizDuNT5x4MyLReA_7PFbI8OUnsuAYvo-VGdOabf_FqoBbFtY=w60-h60-p-l90-rj' alt=''/>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td rowSpan={2} className='text-muted'>
+                        SIMILAR TO
+                        <div className='fs-2 fw-bolder text-white'>
+                          YOASOBI
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                
+                
+                <div className='fs-2 fw-bolder'>
+                  <span href="#similarToCarousel" role="button" data-bs-slide="prev">
+                    <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1 rotate90deg'/>
+                  </span>
+                  &nbsp;&nbsp;
+                  <span href="#similarToCarousel" role="button" data-bs-slide="next">
+                    <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1'/>
+                  </span>
+                </div>
+              </div>
+            
+              <div>
+                <div className="text-center my-3">
+                  <div className="row my-auto justify-content-center">
+                      <div id="similarToCarousel" className="carousel slide" data-bs-ride="carousel">
+                          <div className="carousel-inner mb-3" role="listbox">
+                              <Card type={7} />
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Similar To Section */}
+
           </div>
         
         </div>
