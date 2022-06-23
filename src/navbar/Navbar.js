@@ -57,7 +57,7 @@ class Navbar extends Component {
                                 </span>
                             </Link>
                             
-                            <Link to='/' style={{ textDecoration: 'none', color: this.setNavColor('3')}} className={this.setNavClass('3')}>
+                            <Link to='/library/playlists' style={{ textDecoration: 'none', color: this.setNavColor('3')}} className={this.setNavClass('3')}>
                                 <span data-id='3' onClick={this.setActiveIndex} className='link-navbar'>
                                     Library
                                 </span>
