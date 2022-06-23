@@ -9,6 +9,8 @@ import {startRadioBasedOnASong} from './start_radio_based_on_a_song';
 import CardMultiItem from './CardMultiItem';
 import {recommendedForYou} from './recommended_for_you';
 import { similarTo } from './similar_to';
+import { newAlbum } from '../explore/newAlbumData';
+import { newMusicVideos } from '../explore/newMusicVideos';
 
 export default class Card extends Component {
 
@@ -28,7 +30,11 @@ export default class Card extends Component {
                                 ? recommendedForYou
                                 : props.type === 7
                                     ? similarTo
-                                    : similarTo;
+                                    : props.type === 8
+                                        ? newAlbum
+                                        : props.type === 9
+                                        ? newMusicVideos
+                                        : newMusicVideos
     }
 
     render() {

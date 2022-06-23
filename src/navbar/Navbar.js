@@ -51,7 +51,7 @@ class Navbar extends Component {
                                 </span>
                             </Link>
                             
-                            <Link to='/' style={{ textDecoration: 'none', color: this.setNavColor('2')}} className={this.setNavClass('2')}>
+                            <Link to='/explore' style={{ textDecoration: 'none', color: this.setNavColor('2')}} className={this.setNavClass('2')}>
                                 <span data-id='2' onClick={this.setActiveIndex} className='link-navbar'>
                                     Explore
                                 </span>
