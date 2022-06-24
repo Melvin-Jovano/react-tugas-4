@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from "react";
+import React, { Fragment } from "react";
 import {MdOutlineNavigateNext} from 'react-icons/md'
 import Navbar from "../navbar/Navbar";
 import Headline from "./HeadLine"
@@ -65,7 +65,7 @@ class Explore extends React.Component {
 
             {/* Trending */}
             <div className="pt-5">
-              <div className="d-flex justify-content-between mb-2">
+              <div className="d-flex justify-content-between">
                 <div className='fs-1 fw-bolder text-white'>
                   Mixed for you
                 </div>

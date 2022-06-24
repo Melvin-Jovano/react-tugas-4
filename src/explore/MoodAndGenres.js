@@ -1,5 +1,4 @@
 import React from "react";
-import Card from '../home/Card';
 
 class Mood extends React.Component{
     render(){
