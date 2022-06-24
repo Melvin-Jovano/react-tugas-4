@@ -6,8 +6,17 @@
     line-height: 1.5em;
 }
 
+.recentTitle{
+    font-size: 24px;
+    font-weight: 700;
+}
+
 .liSpacing{
     margin: 0 13px;
     padding: 13px 0;
     cursor: pointer;
+}
+
+.linkStyle{
+    padding: 13px 0;
 }

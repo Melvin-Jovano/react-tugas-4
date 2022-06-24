@@ -2,9 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './root.css';
 import Home from './home/Home';
-import Library from "./library/Library"
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Library from "./library/Library";
+import Playlists from "./library/Playlists";
+import Albums from "./library/Albums";
+import Songs from "./library/Songs";
+import Artists from "./library/Artists";
+import Subscriptions from "./library/Subscriptions"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +19,13 @@ root.render(
 
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path='/library/playlists' element={<Library/>}/>
+        <Route path='library' element={<Library/>}>
+            <Route path='playlists' element={<Playlists/>} />
+            <Route path='albums' element={<Albums/>} />
+            <Route path='songs' element={<Songs/>} />
+            <Route path='artists' element={<Artists/>} />
+            <Route path='subscriptions' element={<Subscriptions/>} />
+        </Route>
       </Routes>
 
     </Router>

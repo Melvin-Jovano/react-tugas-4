@@ -36,7 +36,7 @@ class Navbar extends Component {
 
     render() {
         return (
-            <div className='bg-black py-3 px-3'>
+            <div className='bg-black py-3 px-3 sticky-top'>
 
                 <div className='d-flex justify-content-between'>
                     <div>
@@ -57,7 +57,7 @@ class Navbar extends Component {
                                 </span>
                             </Link>
                             
-                            <Link to='/library/playlists' style={{ textDecoration: 'none', color: this.setNavColor('3')}} className={this.setNavClass('3')}>
+                            <Link to='library/playlists' style={{ textDecoration: 'none', color: this.setNavColor('3')}} className={this.setNavClass('3')}>
                                 <span data-id='3' onClick={this.setActiveIndex} className='link-navbar'>
                                     Library
                                 </span>
