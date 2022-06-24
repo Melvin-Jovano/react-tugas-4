@@ -1,0 +1,16 @@
+.headlineCard{
+    background-color: #333;
+    transition: 0.3s;
+}
+.headlineCard:hover{
+    background-color: #212121;
+    cursor: pointer;
+}
+.iconColor{
+    color : #AAAAAA
+}
+.moodAndGenres{
+    border-left: 6px solid red;
+    background-color: #333;
+    transition: 0.3s;
+}

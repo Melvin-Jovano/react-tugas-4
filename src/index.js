@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './root.css';
 import Home from './home/Home';
+import Explore from './explore/Explore';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Library from "./library/Library";
@@ -26,6 +27,7 @@ root.render(
             <Route path='artists' element={<Artists/>} />
             <Route path='subscriptions' element={<Subscriptions/>} />
         </Route>
+        <Route path="/explore" element={<Explore/>} />
       </Routes>
 
     </Router>
