@@ -11,7 +11,7 @@ class Library extends React.Component{
         return(
             <Fragment>
                 <Navbar activeIndex = "3"/>
-                <div className="container px-5">
+                <div className="container px-4">
                     <div className="container pt-4 px-0 recentContainer">
                         <div className="d-flex align-items-center">
                             <span className="recentTitle text-white flex-grow-1">Recent activity</span>
