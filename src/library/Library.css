@@ -20,3 +20,82 @@
 .linkStyle{
     padding: 13px 0;
 }
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .3s ease;
+}
+.overlayPlaylist{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4),transparent);
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.card-img:hover .overlay{
+    opacity: 1;
+}
+
+.card-img:hover .overlayPlaylist{
+    opacity: 1;
+}
+
+.threeDots{
+    position: absolute;
+    top: 11%;
+    right: 8%;
+    color: white;
+    font-size: 23px;
+}
+
+.buttonWrap{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 12%;
+    right: 13%;
+    height: 40px;
+    width: 40px;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.buttonWrap:hover{
+    background-color: black;
+    transform: scale(1.25);
+}
+
+.playlistButton{
+    position: absolute;
+    bottom: 18%;
+    right: 18%;
+    font-size: 25px;
+    color: white;
+}
+
+.artistUnderline:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.recentContainer{
+    height: 340px;
+    margin-bottom: 56px;
+}
+
+.dataContainer{
+    height: 89vh;
+}
