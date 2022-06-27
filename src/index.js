@@ -5,12 +5,12 @@ import Home from './home/Home';
 import Explore from './explore/Explore';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Library from "./library/Library";
-import Playlists from "./library/Playlists";
-import Albums from "./library/Albums";
-import Songs from "./library/Songs";
-import Artists from "./library/Artists";
-import Subscriptions from "./library/Subscriptions"
+import Library from "./library/Pages/Library";
+import Playlists from "./library/Pages/Playlists";
+import Albums from "./library/Pages/Albums";
+import Songs from "./library/Pages/Songs";
+import Artists from "./library/Pages/Artists";
+import Subscriptions from "./library/Pages/Subscriptions"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

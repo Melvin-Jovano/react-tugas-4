@@ -97,5 +97,57 @@
 }
 
 .dataContainer{
-    height: 89vh;
+    height: 88.5vh;
+}
+
+.navLine{
+    border-bottom: solid 1px;
+    border-color: rgba(80, 80, 80, 0.4);
+}
+
+.dropSpacing{
+    padding: 2px 18px 2px 12px;
+}
+
+.dropPill{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1)!important;
+    cursor: pointer;
+}
+
+.dropList{
+    background-color: #333;
+    top: 0;
+    left: 1.2%;
+}
+
+.dropItem{
+    padding: 10px 0;
+}
+
+.dropItem:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.selected, .selected:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.noAlbumsIcon{
+    font-size: 96px;
+    color: #606060;
+}
+
+.noAlbumsText{
+    color: #717171;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.noAlbumsDescription{
+    color: #717171;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 8px;
 }

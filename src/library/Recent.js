@@ -27,11 +27,6 @@ class Recent extends React.Component{
                                                     <MdPlayArrow className="playlistButton"/>
                                                 </div>}
                                         </div>
-                                        {data.type === "Chart" ?
-                                            <div className="rounded-circle buttonWrap">
-                                                <MdPlayArrow className="playlistButton"/>
-                                            </div> : ""
-                                        }
                                         <MdPlayArrow className={data.type === "Song" ? "position-absolute top-50 start-50 translate-middle text-white fs-1" : "d-none"}/>
                                     </a>
                                 </div>
