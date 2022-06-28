@@ -40,7 +40,7 @@ class Navbar extends Component {
     
     render() {
         return (
-            <div className='bg-black py-3 px-3'>
+            <div className='bg-black py-3 px-3 sticky-top'>
 
                 <div className='d-flex justify-content-between'>
                     <div>

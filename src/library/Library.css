@@ -1,0 +1,185 @@
+#libList{
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+    line-height: 1.5em;
+}
+
+.recentTitle{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.liSpacing{
+    margin: 0 13px;
+    padding: 13px 0;
+    cursor: pointer;
+}
+
+.linkStyle{
+    padding: 13px 0;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .3s ease;
+}
+.overlayPlaylist{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4),transparent);
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.card-img:hover .overlay{
+    opacity: 1;
+}
+
+.card-img:hover .overlayPlaylist{
+    opacity: 1;
+}
+
+.threeDots{
+    position: absolute;
+    top: 11%;
+    right: 8%;
+    color: white;
+    font-size: 23px;
+}
+
+.buttonWrap{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 12%;
+    right: 13%;
+    height: 40px;
+    width: 40px;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.buttonWrap:hover{
+    background-color: black;
+    transform: scale(1.25);
+}
+
+.playlistButton{
+    position: absolute;
+    bottom: 18%;
+    right: 18%;
+    font-size: 25px;
+    color: white;
+}
+
+.artistUnderline:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.recentContainer{
+    height: 340px;
+    margin-bottom: 56px;
+}
+
+.dataContainer{
+    height: 88.5vh;
+}
+
+.navLine{
+    border-bottom: solid 1px;
+    border-color: rgba(80, 80, 80, 0.4);
+}
+
+.dropSpacing{
+    padding: 2px 18px 2px 12px;
+}
+
+.dropPill{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1)!important;
+    cursor: pointer;
+}
+
+.dropList{
+    background-color: #333;
+    top: 0;
+    left: 1.2%;
+}
+
+.dropItem{
+    padding: 10px 0;
+}
+
+.dropItem:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.selected, .selected:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.emptyPageIcon{
+    font-size: 96px;
+    color: #606060;
+}
+
+.emptyPageText{
+    color: #717171;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.emptyPageDescription{
+    color: #717171;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.songsTitle{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hoverStyle:hover{
+    text-decoration: underline !important;
+}
+
+.playSongs{
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 100%;
+    color: white;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlaySong{
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.songCard:hover .overlaySong{
+    opacity: 1;
+}
+
+.artistCard:hover .overlaySong{
+    opacity: 1;
+}
