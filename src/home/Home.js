@@ -11,16 +11,45 @@ export default class Home extends Component {
         <Navbar activeIndex='1' />
         <div className='bg-black'>
           
-          <div className='container pt-4'>
+          <div className='containerr pt-4'>
+            {/* Your favourites Section */}
+            <div>
+              <div className="d-flex justify-content-between pt-4 mt-4">
+                <div className='fs-1 fw-bolder text-white'>
+                  Your favourites
+                </div>
+                <div className='fs-1 fw-bolder'>
+                  <span href="#listenAgainCarousel" role="button" data-bs-slide="prev">
+                    <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1 rotate90deg'/>
+                  </span>
+                  &nbsp;&nbsp;
+                  <span href="#listenAgainCarousel" role="button" data-bs-slide="next">
+                    <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1'/>
+                  </span>
+                </div>
+              </div>
+              <div>
+                <div className="text-center my-3">
+                  <div className="row my-auto justify-content-center">
+                      <div id="listenAgainCarousel" className="carousel slide" data-bs-ride="carousel">
+                          <div className="carousel-inner mb-3" role="listbox">
+                              <Card type={2} />
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Your favourites Section */}
 
             {/* Listen Again Section */}
-            <div className='mb-5'>
-              <div className="d-flex justify-content-between">
-                <div className='fs-2 fw-bolder text-white'>
+            <div>
+              <div className="d-flex justify-content-between pt-4 mt-4">
+                <div className='fs-1 fw-bolder text-white'>
                     Listen again
                 </div>
 
-                <div className='fs-2 fw-bolder'>
+                <div className='fs-1 fw-bolder'>
                   <span href="#yourFavouritesCarousel" role="button" data-bs-slide="prev">
                     <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1 rotate90deg'/>
                   </span>
@@ -45,46 +74,14 @@ export default class Home extends Component {
             </div>
             {/* Listen Again Section */}
 
-            {/* Your favourites Section */}
-            <div>
-              <div className="d-flex justify-content-between mb-2">
-                <div className='fs-2 fw-bolder text-white'>
-                  Your favourites
-                </div>
-
-                <div className='fs-2 fw-bolder'>
-                  <span href="#listenAgainCarousel" role="button" data-bs-slide="prev">
-                    <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1 rotate90deg'/>
-                  </span>
-                  &nbsp;&nbsp;
-                  <span href="#listenAgainCarousel" role="button" data-bs-slide="next">
-                    <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1'/>
-                  </span>
-                </div>
-              </div>
-            
-              <div>
-                <div className="text-center my-3">
-                  <div className="row my-auto justify-content-center">
-                      <div id="listenAgainCarousel" className="carousel slide" data-bs-ride="carousel">
-                          <div className="carousel-inner mb-3" role="listbox">
-                              <Card type={2} />
-                          </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Your favourites Section */}
-
             {/* Mixed For You Section */}
             <div>
-              <div className="d-flex justify-content-between mb-2">
-                <div className='fs-2 fw-bolder text-white'>
+              <div className="d-flex justify-content-between pt-4 mt-4">
+                <div className='fs-1 fw-bolder text-white'>
                   Mixed for you
                 </div>
 
-                <div className='fs-2 fw-bolder'>
+                <div className='fs-1 fw-bolder'>
                   <span href="#mixedForYouCarousel" role="button" data-bs-slide="prev">
                     <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1 rotate90deg'/>
                   </span>
@@ -111,8 +108,8 @@ export default class Home extends Component {
 
             {/* Charts Section */}
             <div>
-              <div className="d-flex justify-content-between mb-2">
-                <div className='fs-2 fw-bolder text-white'>
+              <div className="d-flex justify-content-between pt-4 mt-4">
+                <div className='fs-1 fw-bolder text-white'>
                   Charts
                 </div>
 
@@ -137,19 +134,19 @@ export default class Home extends Component {
 
             {/* Start Radio Based On A Song Section */}
             <div>
-              <div className="d-flex justify-content-between mb-2">
+              <div className="d-flex justify-content-between pt-4 mt-4">
                 
                 <div>
                   <div className='text-muted'>
                     START RADIO BASED ON A SONG
                   </div>
-                  <div className='fs-2 fw-bolder text-white'>
+                  <div className='fs-1 fw-bolder text-white'>
                     Quick picks
                   </div>
                 </div>
                 
 
-                <div className='fs-2 fw-bolder'>
+                <div className='fs-1 fw-bolder'>
                   <span href="#startRadioBasedOnASongCarousel" role="button" data-bs-slide="prev">
                     <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1 rotate90deg'/>
                   </span>
@@ -176,13 +173,13 @@ export default class Home extends Component {
 
             {/* Recommended For You Section */}
             <div>
-              <div className="d-flex justify-content-between mb-2">
+              <div className="d-flex justify-content-between pt-4 mt-4">
                 
-                <div className='fs-2 fw-bolder text-white'>
+                <div className='fs-1 fw-bolder text-white'>
                   Recommended music videos
                 </div>
                 
-                <div className='fs-2 fw-bolder'>
+                <div className='fs-1 fw-bolder'>
                   <span href="#recommendedForYouCarousel" role="button" data-bs-slide="prev">
                     <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1 rotate90deg'/>
                   </span>
@@ -209,7 +206,7 @@ export default class Home extends Component {
 
             {/* Similar To Section */}
             <div>
-              <div className="d-flex justify-content-between mb-2">
+              <div className="d-flex justify-content-between pt-4 mt-4">
                 
                 <div>
                   <table cellPadding={10}>
@@ -221,7 +218,7 @@ export default class Home extends Component {
                     <tr>
                       <td rowSpan={2} className='text-muted'>
                         SIMILAR TO
-                        <div className='fs-2 fw-bolder text-white'>
+                        <div className='fs-1 fw-bolder text-white'>
                           YOASOBI
                         </div>
                       </td>
@@ -230,7 +227,7 @@ export default class Home extends Component {
                 </div>
                 
                 
-                <div className='fs-2 fw-bolder'>
+                <div className='fs-1 fw-bolder'>
                   <span href="#similarToCarousel" role="button" data-bs-slide="prev">
                     <MdOutlineNavigateNext className='text-white rounded-circle border border-light p-1 border-1 rotate90deg'/>
                   </span>

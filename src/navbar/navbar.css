@@ -9,3 +9,8 @@
 .link-navbar:hover {
     color: white;
 }
+
+.showForm{
+    width: 100%;
+    z-index: 2;
+}

@@ -15,7 +15,7 @@ export default class CardItem extends Component {
             let element = <img alt='' src={data.thumbnail}  className={`w-100 ${data.isRounded ? 'rounded-circle' : 'rounded'}`}/>;
 
             if(data.isVideo) {
-                element = <iframe height="200" className='w-100' src={data.thumbnail} title={index} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;
+                element = <iframe height="250" className='w-100' src={data.thumbnail} title={index} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;
             }
 
             return(

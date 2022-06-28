@@ -13,19 +13,19 @@ export const mixedForYou = [
             span : 2
         },
         {
-            thumbnail : 'https://music.youtube.com/image/mixart?r=ENgEGNgEMiEICBADGgovbS8wODBoeHJ6GgsvbS8wMTJ3cnNndyICZW4',
+            thumbnail : 'https://music.youtube.com/image/mixart?r=ENgEGNgEMiMICBABGg0vZy8xMWY1ZGhqYmN5GgovbS8wZnM0bXpjIgJlbg',
             title : 'My Mix 1',
             description : 'Yorushika, back number, Kenshi Yonezu, Rie',
             span : 2
         },
         {
-            thumbnail : 'https://music.youtube.com/image/mixart?r=ENgEGNgEMiMICBABGg0vZy8xMWY1ZGhqYmN5GgovbS8wZnM0bXpjIgJlbg',
-            title : 'My Mix 1',
+            thumbnail : 'https://music.youtube.com/image/mixart?r=ENgEGNgEMiYICBACGg0vZy8xMWM3aGRuZmhjGg0vZy8xMWJ4ODlsd2Y2IgJlbg',
+            title : 'My Mix 2',
             description : 'The Walters, Ruth B., Ed Sheeran, Duncan Laurence',
             span : 2
         },
         {
-            thumbnail : 'https://music.youtube.com/image/mixart?r=ENgEGNgEMiYICBACGg0vZy8xMWM3aGRuZmhjGg0vZy8xMWJ4ODlsd2Y2IgJlbg',
+            thumbnail : 'https://music.youtube.com/image/mixart?r=ENgEGNgEMiEICBADGgovbS8wODBoeHJ6GgsvbS8wMTJ3cnNndyICZW4 ',
             title : 'My Mix 3',
             description : 'Caravan Palace, Mitski, Sir Chloe, Peach PRC',
             span : 2

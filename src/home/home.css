@@ -1,6 +1,10 @@
 body {
     background-color: black;
 }
+.containerr{
+    width: 80%;
+    margin: 0 auto;
+}
 .bg-black {
     background-color: black;
 }
@@ -10,7 +14,7 @@ body {
 }
 
 .height-for-card-carousel {
-    height: 300px;
+    height: auto;
 }
 
 .underline-on-hover:hover {

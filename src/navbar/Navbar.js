@@ -7,7 +7,8 @@ class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            activeIndex: props.activeIndex
+            activeIndex: props.activeIndex,
+            show: true,
         };
         this.setActiveIndex = this.setActiveIndex.bind(this);
     }
@@ -33,7 +34,10 @@ class Navbar extends Component {
         else
             return 'cursor-pointer fw-bold mx-4'
     }
-
+    toggle = () => this.setState((currentState) => ({
+        show: !currentState.show
+    }));
+    
     render() {
         return (
             <div className='bg-black py-3 px-3'>
@@ -45,6 +49,10 @@ class Navbar extends Component {
 
                     <div className='fs-5'>
                         <center>
+                            {   
+                                this.state.show && 
+                                <input type="text" name="name" className='showForm' /> && this.setNavClass('hi')
+                            }
                             <Link to='/' style={{ textDecoration: 'none', color: this.setNavColor('1')}} className={this.setNavClass('1')}>
                                 <span data-id='1' onClick={this.setActiveIndex} className='link-navbar'>
                                     Home
@@ -63,8 +71,8 @@ class Navbar extends Component {
                                 </span>
                             </Link>
 
-                            <Link to='/' style={{ textDecoration: 'none', color: this.setNavColor('4')}} className={this.setNavClass('4')}>
-                                <span data-id='4' onClick={this.setActiveIndex} className='link-navbar'>
+                            <Link to='/' style={{ textDecoration: 'none', color: this.setNavColor('4')}} className="btn">
+                                <span data-id='4' onClick={this.toggle} className='link-navbar'>
                                     <FaSearch />&emsp;Search
                                 </span>
                             </Link>

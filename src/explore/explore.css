@@ -1,5 +1,6 @@
-.container{
-    width: 90% !important;
+.containerr{
+    width: 80%;
+    margin: 0 auto;
 }
 .headlineCard{
     background-color: #333;
