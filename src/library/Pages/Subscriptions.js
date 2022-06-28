@@ -1,7 +1,7 @@
 import React from "react";
 import {MdSubscriptions} from "react-icons/md"
 
-class Albums extends React.Component{
+class Subscriptions extends React.Component{
     render(){
         return(
             <div className="pt-5">
@@ -15,4 +15,4 @@ class Albums extends React.Component{
     }
 }
 
-export default Albums;
+export default Subscriptions;
