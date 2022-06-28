@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
-import { MdPlayArrow } from "react-icons/md";
-import {BiDotsVerticalRounded} from "react-icons/bi";
+import { MdPlayArrow, MdMoreVert } from "react-icons/md";
 import recentData from "./recentData";
 import "./Library.css"
 
@@ -21,7 +20,7 @@ class Recent extends React.Component{
                                     <a href={data.linkLagu} title={data.title}>
                                         <img src={data.cover} alt=""  className={data.type === "Song" ? "bg-black rounded" : "bg-black rounded"} height={160}/>
                                         <div className={data.type === "Song" ? "overlay" : "overlayPlaylist"}>
-                                            <BiDotsVerticalRounded className="threeDots"/>
+                                            <MdMoreVert className="threeDots"/>
                                             {data.type === "Song" ? "" :
                                                 <div className="rounded-circle buttonWrap">
                                                     <MdPlayArrow className="playlistButton"/>

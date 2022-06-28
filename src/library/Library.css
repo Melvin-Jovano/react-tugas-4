@@ -133,21 +133,53 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.noAlbumsIcon{
+.emptyPageIcon{
     font-size: 96px;
     color: #606060;
 }
 
-.noAlbumsText{
+.emptyPageText{
     color: #717171;
     font-size: 20px;
     font-weight: 500;
     margin-top: 16px;
 }
 
-.noAlbumsDescription{
+.emptyPageDescription{
     color: #717171;
     font-size: 14px;
     font-weight: 400;
     margin-top: 8px;
+}
+
+.songsTitle{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hoverStyle:hover{
+    text-decoration: underline !important;
+}
+
+.playSongs{
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 100%;
+    color: white;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlaySong{
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.songCard:hover .overlaySong{
+    opacity: 1;
+}
+
+.artistCard:hover .overlaySong{
+    opacity: 1;
 }

@@ -1,6 +1,5 @@
 import React, {Fragment} from "react";
-import { MdPlayArrow } from "react-icons/md";
-import {BiDotsVerticalRounded} from "react-icons/bi";
+import { MdPlayArrow, MdMoreVert } from "react-icons/md";
 
 class playlistsItems extends React.Component{
     constructor(){
@@ -34,11 +33,11 @@ class playlistsItems extends React.Component{
                             <a href="">
                                 <img src={item.cover} alt="" height={160} className="rounded"/>
                                 <div className={item.type === "New" ? "" : "overlayPlaylist"}>
-                                    <BiDotsVerticalRounded className={item.type === "New" ? "d-none" : "threeDots"}/>
+                                    <MdMoreVert className={item.type === "New" ? "d-none" : "threeDots"}/>
                                     {item.type === "New" ? "" :
-                                        <div className="rounded-circle buttonWrap">
-                                            <MdPlayArrow className="playlistButton"/>
-                                        </div>}
+                                    <div className="rounded-circle buttonWrap">
+                                        <MdPlayArrow className="playlistButton"/>
+                                    </div>}
                                 </div>
                             </a>
                         </div>
