@@ -31,7 +31,7 @@ class Explore extends React.Component {
           <div className="pt-4 mt-4">
             <div className="d-flex justify-content-between">
               <div className='fs-1 fw-bolder text-white'>
-                Mixed for you
+                Moods & genres
               </div>
               <div className='fs-1 fw-bolder'>
                 <span href="#mood" role="button" data-bs-slide="prev">

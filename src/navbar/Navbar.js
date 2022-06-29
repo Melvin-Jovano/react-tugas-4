@@ -8,7 +8,7 @@ class Navbar extends Component {
         super(props);
         this.state = {
             activeIndex: props.activeIndex,
-            show: true,
+            show: false,
         };
         this.setActiveIndex = this.setActiveIndex.bind(this);
     }
@@ -40,7 +40,7 @@ class Navbar extends Component {
     
     render() {
         return (
-            <div className='bg-black py-3 px-3 sticky-top'>
+            <div className='bg-black py-3 px-3'>
 
                 <div className='d-flex justify-content-between'>
                     <div>
@@ -51,7 +51,7 @@ class Navbar extends Component {
                         <center>
                             {   
                                 this.state.show && 
-                                <input type="text" name="name" className='showForm' /> && this.setNavClass('hi')
+                                <input type="text" name="name" className='showForm' /> 
                             }
                             <Link to='/' style={{ textDecoration: 'none', color: this.setNavColor('1')}} className={this.setNavClass('1')}>
                                 <span data-id='1' onClick={this.setActiveIndex} className='link-navbar'>
@@ -71,11 +71,11 @@ class Navbar extends Component {
                                 </span>
                             </Link>
 
-                            <Link to='/' style={{ textDecoration: 'none', color: this.setNavColor('4')}} className="btn">
+                            <span style={{ textDecoration: 'none', color: this.setNavColor('4'), fontWeight: 'bold', fontSize: 20}} className="btn">
                                 <span data-id='4' onClick={this.toggle} className='link-navbar'>
                                     <FaSearch />&emsp;Search
                                 </span>
-                            </Link>
+                            </span>
                             
                             
                         </center>

@@ -18,3 +18,7 @@
     background-color: #333;
     transition: 0.3s;
 }
+.moodAndGenres:hover{
+    background-color: #212121;
+    cursor: pointer;
+}

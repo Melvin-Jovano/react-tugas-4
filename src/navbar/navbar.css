@@ -12,5 +12,14 @@
 
 .showForm{
     width: 100%;
-    z-index: 2;
+    z-index: 1;
+    background-color: #212121;
+    border : none;
+    height : 50px;
+    border-radius: 1px;
+}
+
+input[type=text]{
+    color: #ffffff;
+    font-weight: bold;
 }

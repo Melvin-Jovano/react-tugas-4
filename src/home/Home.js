@@ -11,7 +11,7 @@ export default class Home extends Component {
         <Navbar activeIndex='1' />
         <div className='bg-black'>
           
-          <div className='containerr pt-4'>
+          <div className='containerr'>
             {/* Your favourites Section */}
             <div>
               <div className="d-flex justify-content-between pt-4 mt-4">
